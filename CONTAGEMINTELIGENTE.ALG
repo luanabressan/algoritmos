@@ -2,6 +2,7 @@ algoritmo "ContagemInteligente"
 var
    Ini, Fim, Contador: Inteiro
 inicio
+   EscrevaL ("-------------------------")
    EscrevaL ("  CONTAGEM INTELIGENTE   ")
    EscrevaL ("-------------------------")
    Escreva ("Início: ")
@@ -14,13 +15,14 @@ inicio
    Contador <- Ini
    Se (Ini <= Fim) entao
       Enquanto (Contador <= Fim) faca
-         Escreva (Contador)
+         EscrevaL (Contador)
          Contador <- Contador + 1
       FimEnquanto
    Senão
       Enquanto (Contador >= Fim) faca
-         Escreva (Contador)
+         EscrevaL (Contador)
          Contador <- Contador - 1
       FimEnquanto
    FimSe
+   EscrevaL ("-------------------------")
 fimalgoritmo
